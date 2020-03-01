@@ -1,0 +1,108 @@
+[gd_scene load_steps=54 format=2]
+
+[ext_resource path="res://assets/templerun/Jump__006.png" type="Texture" id=1]
+[ext_resource path="res://assets/templerun/Idle__001.png" type="Texture" id=2]
+[ext_resource path="res://assets/templerun/Jump__007.png" type="Texture" id=3]
+[ext_resource path="res://assets/templerun/Slide__000.png" type="Texture" id=4]
+[ext_resource path="res://scripts/Player.gd" type="Script" id=5]
+[ext_resource path="res://assets/templerun/Run__008.png" type="Texture" id=6]
+[ext_resource path="res://assets/templerun/Slide__007.png" type="Texture" id=7]
+[ext_resource path="res://assets/templerun/Dead__004.png" type="Texture" id=8]
+[ext_resource path="res://assets/templerun/Run__007.png" type="Texture" id=9]
+[ext_resource path="res://assets/templerun/Dead__001.png" type="Texture" id=10]
+[ext_resource path="res://assets/templerun/Run__009.png" type="Texture" id=11]
+[ext_resource path="res://assets/templerun/Dead__005.png" type="Texture" id=12]
+[ext_resource path="res://assets/templerun/Jump__001.png" type="Texture" id=13]
+[ext_resource path="res://assets/templerun/Dead__006.png" type="Texture" id=14]
+[ext_resource path="res://assets/templerun/Dead__007.png" type="Texture" id=15]
+[ext_resource path="res://assets/templerun/Dead__008.png" type="Texture" id=16]
+[ext_resource path="res://assets/templerun/Slide__001.png" type="Texture" id=17]
+[ext_resource path="res://assets/templerun/Slide__009.png" type="Texture" id=18]
+[ext_resource path="res://assets/templerun/Jump__000.png" type="Texture" id=19]
+[ext_resource path="res://assets/templerun/Slide__003.png" type="Texture" id=20]
+[ext_resource path="res://assets/templerun/Jump__008.png" type="Texture" id=21]
+[ext_resource path="res://assets/templerun/Idle__004.png" type="Texture" id=22]
+[ext_resource path="res://assets/templerun/Idle__007.png" type="Texture" id=23]
+[ext_resource path="res://assets/templerun/Slide__006.png" type="Texture" id=24]
+[ext_resource path="res://assets/templerun/Jump__004.png" type="Texture" id=25]
+[ext_resource path="res://assets/templerun/Idle__005.png" type="Texture" id=26]
+[ext_resource path="res://assets/templerun/Run__002.png" type="Texture" id=27]
+[ext_resource path="res://assets/templerun/Run__001.png" type="Texture" id=28]
+[ext_resource path="res://assets/templerun/Idle__003.png" type="Texture" id=29]
+[ext_resource path="res://assets/templerun/Run__006.png" type="Texture" id=30]
+[ext_resource path="res://assets/templerun/Slide__002.png" type="Texture" id=31]
+[ext_resource path="res://assets/templerun/Jump__005.png" type="Texture" id=32]
+[ext_resource path="res://assets/templerun/Idle__000.png" type="Texture" id=33]
+[ext_resource path="res://assets/templerun/Dead__000.png" type="Texture" id=34]
+[ext_resource path="res://assets/templerun/Idle__008.png" type="Texture" id=35]
+[ext_resource path="res://assets/templerun/Dead__002.png" type="Texture" id=36]
+[ext_resource path="res://assets/templerun/Jump__002.png" type="Texture" id=37]
+[ext_resource path="res://assets/templerun/Slide__005.png" type="Texture" id=38]
+[ext_resource path="res://assets/templerun/Slide__004.png" type="Texture" id=39]
+[ext_resource path="res://assets/templerun/Run__003.png" type="Texture" id=40]
+[ext_resource path="res://assets/templerun/Slide__008.png" type="Texture" id=41]
+[ext_resource path="res://assets/templerun/Dead__009.png" type="Texture" id=42]
+[ext_resource path="res://assets/templerun/Dead__003.png" type="Texture" id=43]
+[ext_resource path="res://assets/templerun/Idle__006.png" type="Texture" id=44]
+[ext_resource path="res://assets/templerun/Run__005.png" type="Texture" id=45]
+[ext_resource path="res://assets/templerun/Run__004.png" type="Texture" id=46]
+[ext_resource path="res://assets/templerun/Idle__009.png" type="Texture" id=47]
+[ext_resource path="res://assets/templerun/Jump__009.png" type="Texture" id=48]
+[ext_resource path="res://assets/templerun/Jump__003.png" type="Texture" id=49]
+[ext_resource path="res://assets/templerun/Run__000.png" type="Texture" id=50]
+[ext_resource path="res://assets/templerun/Idle__002.png" type="Texture" id=51]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 4 ), ExtResource( 17 ), ExtResource( 31 ), ExtResource( 20 ), ExtResource( 39 ), ExtResource( 38 ), ExtResource( 24 ), ExtResource( 7 ), ExtResource( 41 ), ExtResource( 18 ) ],
+"loop": true,
+"name": "slide",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 33 ), ExtResource( 2 ), ExtResource( 51 ), ExtResource( 29 ), ExtResource( 22 ), ExtResource( 26 ), ExtResource( 44 ), ExtResource( 23 ), ExtResource( 35 ), ExtResource( 47 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 34 ), ExtResource( 10 ), ExtResource( 36 ), ExtResource( 43 ), ExtResource( 8 ), ExtResource( 12 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 42 ) ],
+"loop": true,
+"name": "dead",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 19 ), ExtResource( 13 ), ExtResource( 37 ), ExtResource( 49 ), ExtResource( 25 ), ExtResource( 32 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 21 ), ExtResource( 48 ) ],
+"loop": true,
+"name": "jump",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 50 ), ExtResource( 28 ), ExtResource( 27 ), ExtResource( 40 ), ExtResource( 46 ), ExtResource( 45 ), ExtResource( 30 ), ExtResource( 9 ), ExtResource( 6 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "run",
+"speed": 17.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 19.2623
+height = 50.5594
+
+[node name="Player" type="KinematicBody2D"]
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="AnimatedSprite" parent="."]
+position = Vector2( 32, 64 )
+scale = Vector2( 0.2, 0.2 )
+frames = SubResource( 1 )
+animation = "run"
+frame = 2
+
+[node name="Shape" type="CollisionShape2D" parent="."]
+position = Vector2( 31.9463, 67.1177 )
+shape = SubResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+zoom = Vector2( 1.5, 1.5 )
+limit_bottom = 700
+smoothing_enabled = true

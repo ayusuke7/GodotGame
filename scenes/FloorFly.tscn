@@ -1,0 +1,74 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/objects/Tile (14).png" type="Texture" id=1]
+[ext_resource path="res://assets/objects/Tile (16).png" type="Texture" id=2]
+[ext_resource path="res://assets/objects/Tile (15).png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 64.744, 63.5266 )
+
+[node name="FloorFly" type="Node2D"]
+
+[node name="0" type="Sprite" parent="."]
+position = Vector2( 0.505524, 0.247238 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 1 )
+centered = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody" type="StaticBody2D" parent="0"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="0/StaticBody"]
+visible = false
+position = Vector2( 64.1915, 63.0214 )
+shape = SubResource( 1 )
+
+[node name="1" type="Sprite" parent="."]
+position = Vector2( 64.4827, 0.440903 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 3 )
+centered = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody" type="StaticBody2D" parent="1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="1/StaticBody"]
+visible = false
+position = Vector2( 64.1915, 63.0214 )
+shape = SubResource( 1 )
+
+[node name="2" type="Sprite" parent="."]
+position = Vector2( 128.471, -0.203987 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 3 )
+centered = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody" type="StaticBody2D" parent="2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="2/StaticBody"]
+visible = false
+position = Vector2( 64.1915, 63.0214 )
+shape = SubResource( 1 )
+
+[node name="3" type="Sprite" parent="."]
+position = Vector2( 191.905, -0.151007 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+centered = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody" type="StaticBody2D" parent="3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="3/StaticBody"]
+visible = false
+position = Vector2( 64.1915, 63.0214 )
+shape = SubResource( 1 )
